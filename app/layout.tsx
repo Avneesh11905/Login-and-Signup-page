@@ -3,6 +3,7 @@ import "./globals.css";
 import '@mantine/core/styles.css';
 import { ColorSchemeScript } from '@mantine/core';
 import ThemeProvider from "@/components/ThemeProvider";
+import { HomeButton } from "@/components/HomeButton";
 
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
+          <HomeButton/>
           {children}
         </ThemeProvider>
        

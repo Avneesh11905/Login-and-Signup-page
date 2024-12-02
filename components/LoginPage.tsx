@@ -49,7 +49,7 @@ export default  function Loginpage(){
 
 
   return (
-      <Card radius={10} className='gap-5 w-[20vw] p-4 hmin-[30vh] '>
+      <Card shadow="sm" padding="lg" radius="md" withBorder>
         <form onSubmit={form.onSubmit((data)=>{handleSubmit(  )})}>
           <TextInput
             {...form.getInputProps('Username')}
